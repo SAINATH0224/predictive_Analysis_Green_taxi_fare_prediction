@@ -38,7 +38,7 @@ st.markdown("""
 # Load data function with caching
 @st.cache_data
 def load_data():
-    df = pd.read_parquet("D:\SEM-VI\PA\project-Aug-2023\green_tripdata_2023-08.parquet")
+    df = pd.read_parquet("green_tripdata_2023-08.parquet")
     
     # Preprocessing steps from notebook
     df.drop(columns=['ehail_fee', 'fare_amount'], inplace=True, errors='ignore')
